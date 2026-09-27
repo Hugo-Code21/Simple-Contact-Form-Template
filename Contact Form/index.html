@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main class="page-shell">
+            <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+            <h1>Contact us</h1>
+            <p class="intro">Send us a note and we’ll get back to you soon.</p>
+            <form action="/submit" method="post">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <fieldset class="referral-options">
+                    <legend>How did you hear about us?</legend>
+                    <label class="check-option" for="checkbox1">
+                        <input type="checkbox" id="checkbox1" name="checkbox1" value="friend">
+                        Friend
+                    </label>
+                    <label class="check-option" for="checkbox2">
+                        <input type="checkbox" id="checkbox2" name="checkbox2" value="social_media">
+                        Social media
+                    </label>
+                    <label class="check-option" for="checkbox3">
+                        <input type="checkbox" id="checkbox3" name="checkbox3" value="advertisement">
+                        Advertisement
+                    </label>
+                </fieldset>
+
+                <button type="submit">Send message</button>
+            </form>
+        </main>
+    </body>
+</html>
